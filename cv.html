@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tran Huu Minh - Data Analyst CV</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --text-main: #1a1a1a;
+            --text-muted: #555;
+            --accent: #0d6e63;
+            --accent-bg: #e6f5f2;
+            --border: #ccc;
+            --font: 'Inter', 'Segoe UI', Arial, sans-serif;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font);
+            color: var(--text-main);
+            background: #e8e8e8;
+            font-size: 10.5pt;
+            line-height: 1.55;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 14mm 16mm;
+            margin: 8mm auto;
+            background: #fff;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                padding: 14mm 16mm;
+            }
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            text-align: center;
+            padding-bottom: 12pt;
+            border-bottom: 2px solid var(--accent);
+            margin-bottom: 14pt;
+        }
+
+        .header h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            margin-bottom: 2pt;
+        }
+
+        .header h2 {
+            font-size: 12pt;
+            font-weight: 500;
+            color: var(--accent);
+            margin-bottom: 6pt;
+        }
+
+        .contact-row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px 16px;
+            font-size: 9pt;
+            color: var(--text-muted);
+        }
+
+        .contact-row span {
+            white-space: nowrap;
+        }
+
+        .sep {
+            color: #ccc;
+        }
+
+        /* ========== SECTIONS ========== */
+        .section {
+            margin-bottom: 14pt;
+        }
+
+        .section-title {
+            font-size: 11.5pt;
+            font-weight: 700;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            border-bottom: 1.5px solid var(--accent);
+            padding-bottom: 3pt;
+            margin-bottom: 8pt;
+        }
+
+        /* ========== ITEMS ========== */
+        .item {
+            margin-bottom: 10pt;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 11pt;
+        }
+
+        .item-date {
+            font-size: 9pt;
+            color: var(--text-muted);
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .item-sub {
+            font-size: 9.5pt;
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 3pt;
+        }
+
+        .item-tech {
+            font-size: 8.5pt;
+            color: var(--accent);
+            font-family: 'Courier New', monospace;
+            margin-bottom: 3pt;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 14px;
+            margin-bottom: 3pt;
+            font-size: 9.5pt;
+            line-height: 1.5;
+        }
+
+        ul li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 9pt;
+        }
+
+        /* ========== SKILLS ========== */
+        .skills-list {
+            font-size: 9.5pt;
+        }
+
+        .skills-list .skill-row {
+            margin-bottom: 4pt;
+        }
+
+        .skills-list strong {
+            font-weight: 600;
+            display: inline-block;
+            min-width: 130px;
+            color: var(--text-main);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="page">
+
+        <!-- HEADER -->
+        <header class="header">
+            <h1>TRAN HUU MINH</h1>
+            <h2>Data Analyst</h2>
+            <div class="contact-row">
+                <span>0392 021 103</span>
+                <span class="sep">|</span>
+                <span>huuminhtran2003@gmail.com</span>
+                <span class="sep">|</span>
+                <span>Ho Chi Minh City, Vietnam</span>
+                <span class="sep">|</span>
+                <span><a href="https://linkedin.com/in/hu-min">linkedin.com/in/hu-min</a></span>
+                <span class="sep">|</span>
+                <span><a href="https://github.com/humin2003">github.com/humin2003</a></span>
+                <span class="sep">|</span>
+                <span><a href="https://humin2003.github.io/portfolio">humin2003.github.io/portfolio</a></span>
+            </div>
+        </header>
+
+        <!-- PROFESSIONAL SUMMARY -->
+        <section class="section">
+            <div class="section-title">Professional Summary</div>
+            <p style="font-size:10pt; text-align:justify;">
+                Detail-oriented Data Analyst with hands-on experience building end-to-end analytics pipelines.
+                Proficient in transforming raw data into actionable insights using Python for exploratory analysis and
+                Power BI for interactive dashboarding. Adept at handling large datasets (50K+ records), developing
+                customer segmentation models, and integrating AI automation tools to optimize workflows.
+            </p>
+        </section>
+
+        <!-- EDUCATION -->
+        <section class="section">
+            <div class="section-title">Education</div>
+            <div class="item">
+                <div class="item-row">
+                    <div class="item-title">Saigon University</div>
+                    <div class="item-date">2021 – 2026</div>
+                </div>
+                <div class="item-sub">Bachelor of Engineering in Information Technology — Major: Information Systems
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section class="section">
+            <div class="section-title">Experience</div>
+            <div class="item">
+                <div class="item-row">
+                    <div class="item-title">Software Development Intern (AI & Automation)</div>
+                    <div class="item-date">Jun 2025 – Aug 2025</div>
+                </div>
+                <div class="item-sub">I-CLC Language Center — Ho Chi Minh City</div>
+                <ul>
+                    <li>Designed automated workflows using <strong>n8n</strong>, integrating multiple APIs and
+                        processing complex JSON data structures to optimize educational operations.</li>
+                    <li>Engineered a RAG pipeline ingesting Google Drive documents, performing text chunking and storing
+                        vector embeddings in Supabase Vector Store for semantic search.</li>
+                    <li>Developed a context-aware chatbot with session memory using SessionId and Postgres Chat Memory
+                        for personalized responses.</li>
+                    <li>Deployed a Model Context Protocol (MCP) Server using FastMCP, enabling AI models to retrieve
+                        real-time external data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="section">
+            <div class="section-title">Projects</div>
+
+            <div class="item">
+                <div class="item-row">
+                    <div class="item-title">Global Superstore Sales Dashboard</div>
+                </div>
+                <div class="item-tech">Python · Pandas · Power BI · DAX · Power Query</div>
+                <ul>
+                    <li>Conducted end-to-end analysis on <strong>51,290 transactions</strong> across <strong>147
+                            countries</strong> (4 years), generating insights on <strong>$12.64M</strong> total revenue.
+                    </li>
+                    <li>Built a 4-page interactive Power BI dashboard: KPI summary, regional market comparisons, RFM
+                        segmentation, and CLV estimation.</li>
+                    <li>Engineered a dynamic RFM scoring model, segmenting <strong>795 customers</strong> into 11
+                        actionable groups (Champions, At Risk, etc.).</li>
+                    <li>Utilized advanced DAX (YoY comparisons, Field Parameters) and validated the Pareto principle
+                        (~30% segments → ~80% revenue).</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-row">
+                    <div class="item-title">RFM Customer Segmentation</div>
+                </div>
+                <div class="item-tech">Python · Pandas · K-Means Clustering · SQL</div>
+                <ul>
+                    <li>Performed data cleaning and preprocessing on large retail transactional datasets using Python
+                        Pandas.</li>
+                    <li>Applied K-Means clustering to segment customers based on RFM features, identifying behavioral
+                        patterns for targeted marketing.</li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-row">
+                    <div class="item-title">RAG-based Document Intelligence System</div>
+                </div>
+                <div class="item-tech">Python · LangChain · FAISS · Google Gemini · Streamlit</div>
+                <ul>
+                    <li>Built an AI app enabling PDF upload and conversational information extraction via Streamlit UI.
+                    </li>
+                    <li>Implemented document chunking + FAISS vector embeddings for efficient semantic search,
+                        integrated with Google Gemini for accurate Q&A responses.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section">
+            <div class="section-title">Skills & Technologies</div>
+            <div class="skills-list">
+                <div class="skill-row"><strong>Programming:</strong> Python (Pandas, NumPy, Matplotlib, Seaborn), SQL
+                </div>
+                <div class="skill-row"><strong>Visualization:</strong> Power BI, DAX, Power Query, Excel</div>
+                <div class="skill-row"><strong>Machine Learning:</strong> K-Means Clustering, RFM Segmentation,
+                    Exploratory Data Analysis (EDA), Statistical Analysis</div>
+                <div class="skill-row"><strong>AI & Automation:</strong> LangChain, RAG, n8n, LangGraph, LLMs (Google
+                    Gemini), FastMCP</div>
+                <div class="skill-row"><strong>Languages:</strong> Vietnamese (Native), English (TOEIC 800)</div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

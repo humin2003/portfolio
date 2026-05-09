@@ -70,6 +70,8 @@ ul { list-style: none; }
     border-radius: var(--radius-sm); transition: var(--transition);
 }
 .nav-cta:hover { background: var(--accent-dim); }
+.nav-resume { background: var(--accent); color: var(--bg-primary); }
+.nav-resume:hover { background: #4de8c2; color: var(--bg-primary); }
 
 /* Hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
